@@ -1,0 +1,237 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: bisque;
+}
+
+h1{
+    font-size: 3.1em
+}
+
+h2{
+    font-size: 2.2em;
+}
+
+h3{
+    font-size: 1.8em;
+}
+
+p{
+    font-size: 1.3em;
+}
+
+ul{
+    list-style: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+button{
+    font-size: 2em;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 15px;
+    border: 1px solid rgba(0,0,0,.5);
+    color: white;
+    background-color: rgb(62, 145, 170);
+}
+img{
+    width: 300px;
+    border-radius: 50%;
+    
+    
+}
+
+button:hover{
+    background-color: rgb(106, 63, 223);
+}
+
+.conteiner{
+    max-width: 1000px;
+    margin: auto;
+    
+}
+
+header{
+    background-color: cornflowerblue;
+    width: 100%;
+    position: fixed;
+}
+
+header .logo{
+    font-family: 'Ephesis', cursive;;
+    margin: 0;
+    padding: 15px 20px;
+    color: aqua;
+    font-size: 3em;
+    
+}
+
+header .conteiner{
+    display: flex;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    padding-left: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+header a{
+    font-size: 1.5em;
+    padding: 5px 30px;
+    text-decoration: none;
+    color: rgb(183, 231, 215);
+}
+
+a:hover{
+    color: rgb(66, 78, 192);
+}
+#redes{
+    color: aliceblue;
+}
+
+
+#hero{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-family: 'Mynerve', cursive;
+    padding-left: 20px;
+    color: rgb(196, 241, 196);
+    background-color: rgb(22, 22, 20);
+    
+    
+}
+
+
+#sobremi h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    padding-top: 30px;
+}
+
+
+
+#sobremi .conteiner{
+    display: flex;
+    padding: 53px;
+    color: brown;
+    
+    
+}
+
+#sobremi .imagen{
+    padding: 53px;
+    
+    
+}
+
+
+#curriculum{
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),
+    url(/imagenes/mujertrabajando.jpg);
+    background-size: cover;
+    background-position: center center;
+    color: black;
+    background-image: linear-gradient(to top black, grey);
+    display: flex;
+}
+
+#curriculum h2{
+    font-size: 5em;
+    color: chocolate;
+    
+}
+
+
+
+#curriculum .cv{
+    font-size: 1.3em;
+    color: whitesmoke;
+    
+}
+
+#curriculum .conteiner{
+    text-align: center;
+}
+
+#curriculum .habilidades{
+    font-size: 1.5em;
+    color: aqua;
+    align-items: left;
+    text-align: left;
+    border: 5px solid #204aa5;
+    display: flex;
+}
+
+#curriculum .habilidades button{
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+}
+
+#contacto {
+    width: 400px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+
+#contacto h2{
+    color: black;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+#contacto .casilla{
+    width: 100%;
+    background: #d2d8e4;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    border: 1px solid rgb(18, 17, 19);
+    font-size: 1.2em;
+    
+}
+#contacto .formulario .botoncontacto{
+    width: 100%;
+    background: #204aa5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 30px;
+
+}
+
+@media (min-width: 720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .conteiner{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 25px;
+    }
+
+    
+    
+    #sobremi{
+    margin-top: auto;
+    }
+}
